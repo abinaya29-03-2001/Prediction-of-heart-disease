@@ -1,0 +1,17 @@
+{% extends "header.html" %}
+
+{% block content %}
+
+<!-- Heading -->
+<div id="heading">
+    <h1>Diagnosis</h1>
+</div>
+
+<div style="margin: 24px;text-align: center">
+    <h1>You have been diagnosed with Stage {{stage}}</h1>
+    <p>Heart disease can be classified into 4 stages(stage 1 to 4) based on severity of artery blockage. Artery blockage>50% indicates presence of heart disease. Higher the blockage, higher is the stage of heart disease. Stage 3 and 4 are called chronic heart disease and risk of heart attack at anyday in such patients is very high.</p>
+    <a href="/stage{{stage}}" style="background: red; padding: 24px;color: white;">Learn more</a>
+
+</div>
+
+{% endblock %}

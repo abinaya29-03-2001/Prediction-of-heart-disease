@@ -1,0 +1,58 @@
+{% extends "header.html" %}
+{% block content %}
+<!-- Heading -->
+<div id="heading">
+    <h1>Login</h1>
+</div>
+
+<!-- Main -->
+<section id="main" class="wrapper">
+    <div class="inner">
+
+        <div class="content">
+
+            <div class="featured-boxes container">
+
+                <div class="box-content">
+                    <h4 class="color-primary font-weight-semibold text-4 text-uppercase mb-3">Login</h4>
+
+                    <form action="/login" id="frmSignIn" method="post"
+                          class="needs-validation">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="font-weight-bold text-dark text-2">Username</label>
+                                <input type="text" value="" name="username"
+                                       class="form-control" required/>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="font-weight-bold text-dark text-2">Password</label>
+                                <input type="password" value="" name="password"
+                                       class="form-control form-control-lg" required>
+                            </div>
+                        </div>
+                        <br/>
+
+                        <div class="form-group col-lg-6">
+                            <input type="submit" value="Login"
+                                   class="btn btn-primary btn-modern float-right"
+                                   data-loading-text="Loading...">
+
+                            <a class="btn btn-primary btn-modern float-right" href="/signup">Sign up</a>
+                        </div>
+
+
+
+                    </form>
+                </div>
+
+                <h4 class="text-2">{{msg}}</h4>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
